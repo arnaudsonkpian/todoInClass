@@ -2,7 +2,7 @@
   <div class="flex border boxizing">
     <h1 class="">Bienvenue à tous !!!!</h1>
     <FormComponent @sendTaskName="getTaskName" />
-    <TodoList :getAllToDo="toDos" />
+    <TodoList :getAllToDo="toDos"/>
   </div>
 </template>
 
@@ -27,12 +27,10 @@ function getTaskName(taskName: string): void {
     text: taskName,
     isDone: false
   }
-  toDos.value.push(newTodo)
-  
+  toDos.value.push(newTodo)  
   console.log('receive')
 }
 
-// const toDos =ref<Array<Todo>>([])
 </script>
 
 <style scoped>

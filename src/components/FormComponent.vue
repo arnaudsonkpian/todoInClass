@@ -8,7 +8,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 const newtask = ref<string>('')
-// const emit = defineEmits(['sendTask'])
 const emit = defineEmits<{
     (e:"sendTaskName" , value:string):void
 }>()
